@@ -6,5 +6,5 @@ require 'site_prism'
 
 Capybara.configure do |config|
     config.default_driver = :selenium_chrome
-    $home = config.app_host = 'https://www.carrefour.com.br/'
+    Capybara.default_max_wait_time = 5
 end

@@ -1,15 +1,15 @@
-class CarrinhoPage < SitePrism::Page
+class CartPage < SitePrism::Page
     
-    element :mercadoSection, :xpath, '//a[contains(@class, "carrefourbr-carrefour-components-0-x-headerMenuItem-shopping-Mercado")]'
+    element :marketSection, :xpath, '//a[contains(@class, "carrefourbr-carrefour-components-0-x-headerMenuItem-shopping-Mercado")]'
     element :modalClose, :xpath, '//*/button[contains(@title, "Fechar modal de regionalização")]'
-    element :carrinhoButton, :xpath, '//*[@id="__next"]/header/div[2]/nav/aside/button'
+    element :cartIcon, :xpath, '//*[@id="__next"]/header/div[2]/nav/aside/button'
 
-    def acessarMercado 
-        mercadoSection.click
+    def accessMarket 
+        marketSection.click
         modalClose.click
     end
 
-    def acessarCarrinho
-        carrinhoButton.click
+    def accessCart
+        cartIcon.click
     end
 end
