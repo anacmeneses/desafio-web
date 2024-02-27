@@ -11,5 +11,6 @@ class CartPage < SitePrism::Page
 
     def accessCart
         cartIcon.click
+        #validar o carrinho vazio
     end
 end

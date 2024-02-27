@@ -6,10 +6,9 @@ Dado('que o usuário está no site do Carrefour') do
 end
       
 Quando('acessar a seção de mercado') do
-    @test_cart_page = CartPage.new
-    @test_cart_page.accessMarket
+    CartPage.new.accessMarket
 end
       
 Então('deverá visualizar o mini carrinho vazio') do
-    @test_cart_page.accessCart
+    CartPage.new.accessCart
 end
