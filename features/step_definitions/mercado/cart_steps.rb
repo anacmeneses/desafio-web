@@ -10,5 +10,5 @@ Quando('acessar a seção de mercado') do
 end
       
 Então('deverá visualizar o mini carrinho vazio') do
-    CartPage.new.accessCart
+    CartPage.new.accessEmptyCart
 end
